@@ -1,0 +1,115 @@
+
+body {
+	font-family: 'Walkway', Arial, sans-serif;
+	background-color: #F8F8FF;
+}
+
+.titre {
+	text-align: center;
+	font-size: 4em;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav {
+	padding-top: 2em;
+	display: flex;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+.nav li {
+	padding: 0.313em;
+	width: 100%;
+	text-align: center;
+}
+
+
+.draw {
+  transition: color 0.25s;
+}
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: black;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: black;
+  border-right-color: black;
+  transition: width 0.15s ease-out, height 0.10s ease-out 0.12s;
+}
+.draw:hover::after {
+  border-bottom-color: black;
+  border-left-color: black;
+  transition: border-color 0s ease-out 0.12s, width 0.15s ease-out 0.12s, height 0.10s ease-out 0.25s;
+}
+
+ a {
+  background: none;
+  text-decoration: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  box-shadow: inset 0 0 0 2px #F8F8FF;
+  color: black;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+a::before, a::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+	margin: 7em auto;
+	padding: 3em;
+	border-style: solid;
+	border-width: 1px;
+	display: flex;
+	position: relative;
+}
+
+.wrapper {
+	border-style: solid;
+	margin: 5em 2em 2em 2em;
+	padding: 2em 2em 2em 2em;
+}
+
+select{
+	margin-top: 5em;
+	display: inline-block;
+}
+
+video {
+	padding-top: 10em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 640px;
+	display: block;
+}
