@@ -1,12 +1,13 @@
 
 body {
 	font-family: 'Walkway', Arial, sans-serif;
-	background-color: #F8F8FF;
+	background-color: #41aced;
 }
 
 .titre {
 	text-align: center;
 	font-size: 3.5em;
+	color: #f8bf46;
 }
 
 
@@ -47,20 +48,20 @@ ul {
   right: 0;
 }
 .draw:hover {
-  color: black;
+  color: #f8bf46;
 }
 .draw:hover::before, .draw:hover::after {
   width: 100%;
   height: 100%;
 }
 .draw:hover::before {
-  border-top-color: black;
-  border-right-color: black;
+  border-top-color: #f8bf46;
+  border-right-color: #f8bf46;
   transition: width 0.15s ease-out, height 0.10s ease-out 0.12s;
 }
 .draw:hover::after {
-  border-bottom-color: black;
-  border-left-color: black;
+  border-bottom-color: #f8bf46;
+  border-left-color: #f8bf46;
   transition: border-color 0s ease-out 0.12s, width 0.15s ease-out 0.12s, height 0.10s ease-out 0.25s;
 }
 
@@ -71,8 +72,8 @@ ul {
   box-sizing: border-box;
   margin: 1em;
   padding: 1em 2em;
-  box-shadow: inset 0 0 0 2px #F8F8FF;
-  color: black;
+  box-shadow: inset 0 0 0 2px #41aced;
+  color: white;
   font-size: inherit;
   font-weight: 700;
   position: relative;
@@ -97,8 +98,10 @@ section {
 
 .wrapper {
 	border-style: solid;
+	border-color: #f8bf46;
 	margin: 2em 2em 2em 2em;
 	padding: 2em 2em 2em 2em;
+	color: white;
 }
 
 #ddl{
