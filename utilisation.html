@@ -14,15 +14,19 @@
       <li><a href="utilisation.html" class="draw">Utilisation</a></li>
     </ul>
 
-         <select id="ddl" onchange="changerVideo()">
+		<div class="center">
+    <select id="ddl" onchange="changerVideo()">
         <option value="1" selected="selected">Vidéo 1</option>
         <option value="2">Vidéo 2</option>
         <option value="3">Vidéo 3</option>
     </select>
+	</div>
 
+	<div class="wrapper">
     <video id="player" controls="controls" height="360" widht="640">
         <source id="video" src="videos/1.mp4" type="video/mp4">
     </video>
+	</div>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
